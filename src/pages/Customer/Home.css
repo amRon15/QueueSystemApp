@@ -1,0 +1,21 @@
+body{
+    background-color: white;    
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ticket-container{
+    display: block;
+    gap: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: large;
+    cursor: pointer;
+}

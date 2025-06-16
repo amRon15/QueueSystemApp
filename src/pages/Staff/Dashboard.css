@@ -1,0 +1,39 @@
+body{
+    background-color: white;    
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-container-title{
+    text-align: center;
+}
+
+.waiting-ticket-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.waiting-ticket-container p{
+    padding: 10px;
+    background-color: lightgray;
+    color: black;
+    border-radius: 5px;
+}
+
+.skipped-ticket-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.skipped-ticket-container button{
+    padding: 10px;
+    background-color: lightgray;
+    color: black;
+    border-radius: 5px;
+    border: 0;
+}
