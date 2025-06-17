@@ -1,20 +1,28 @@
 body{
-    background-color: white;    
-    height: 100vh;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.top-bar{
+    display: flex;
+    justify-content: space-between;
 }
 
 .ticket-container-title{
     text-align: center;
 }
 
+.null-ticket {
+    color: gray !important; 
+    background-color: transparent !important;
+}
+
 .waiting-ticket-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 .waiting-ticket-container p{
@@ -22,18 +30,64 @@ body{
     background-color: lightgray;
     color: black;
     border-radius: 5px;
+    margin: 0;
 }
 
 .skipped-ticket-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 .skipped-ticket-container button{
     padding: 10px;
-    background-color: lightgray;
-    color: black;
+    background-color: black;
+    color: white;
     border-radius: 5px;
     border: 0;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.skipped-ticket-container button:hover{
+    background-color: #000000d5;
+}
+
+.current-ticket-container{
+    display: flex;
+    align-items: center;
+}
+
+.ticket-confirm{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: black;
+    color: white;    
+    transition: all 0.2s ease-in-out;
+
+}
+
+.ticket-confirm:hover{
+  background-color: #000000d5;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+}
+
+.next-ticket-btn{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0 ;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.next-ticket-btn:hover{
+    background-color: #000000d5;
 }

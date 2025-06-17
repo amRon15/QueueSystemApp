@@ -7,15 +7,27 @@ body{
     align-items: center;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-width: 2px;
+    border-color: black;
+}
 
-.ticket-container{
+.ticket-container{ 
     display: block;
     gap: 20px;
 }
 
 button{
-    padding: 10px 20px;
+    padding: 10px 20px !important;
     margin: 10px;
     font-size: large;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: #000000d5;
 }
